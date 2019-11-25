@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="catalogue-master-getAllProducts">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri" value="/api/catalogue-master/getAllProducts"></parameter>
+
+	<!-- GetOrders API Test Cases -->
+	<test name="validModuleId">
+		<parameter name="moduleId" value="1"></parameter>
+		<classes>
+			<class
+				name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+				<methods>
+					<include name="testGetAllProducts" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="getAllProductsLoadTest">
+		<parameter name="moduleId" value="1"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="500"></parameter>
+		<classes>
+			<class
+				name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+				<methods>
+					<include name="testGetAllProductstLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+
+

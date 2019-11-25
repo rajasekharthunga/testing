@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [catalogue-master]">
+  <parameter name="apiUri" value="/api/catalogue-master/getAllProducts"/>
+  <parameter name="apiKey" value="1234567"/>
+  <parameter name="moduleId" value="1"/>
+  <test name="validModuleId(failed)">
+    <parameter name="moduleId" value="1"/>
+    <classes>
+      <class name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testGetAllProducts" invocation-numbers="0"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg -->
+    </classes>
+  </test> <!-- validModuleId(failed) -->
+</suite> <!-- Failed suite [catalogue-master] -->

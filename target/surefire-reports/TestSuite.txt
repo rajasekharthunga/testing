@@ -1,0 +1,124 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 202, Failures: 30, Errors: 0, Skipped: 0, Time elapsed: 71.032 s <<< FAILURE! - in TestSuite
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.338 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.339 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.012 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.079 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.058 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.333 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetAllProductstLoad(in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg)  Time elapsed: 0.335 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.165 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.034 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+
+testGetProductCatalogueLoad(in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.053 s  <<< FAILURE!
+java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+

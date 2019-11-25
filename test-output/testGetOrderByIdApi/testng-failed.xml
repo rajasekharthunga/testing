@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testGetOrderByIdApi]">
+  <parameter name="apiUri" value="/api/order/id"/>
+  <parameter name="cookie" value="app_cp=e7ab992f-b94e-4017-95bd-a5dabb917698"/>
+  <parameter name="apiKey" value="1234567"/>
+  <parameter name="orderId" value="CH4374700000002"/>
+  <test name="validOrderId(failed)">
+    <parameter name="orderId" value="CH4374700000002"/>
+    <classes>
+      <class name="in.shark.online.web.test.outlet.TestGetOrderByIdApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testGetOrdersById" invocation-numbers="0"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- in.shark.online.web.test.outlet.TestGetOrderByIdApiTestNg -->
+    </classes>
+  </test> <!-- validOrderId(failed) -->
+</suite> <!-- Failed suite [testGetOrderByIdApi] -->

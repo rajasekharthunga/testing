@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="71.032" tests="202" errors="0" skipped="0" failures="30">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/chaipoint/Documents/workspace/pos-ag-test/target/test-classes:/Users/chaipoint/Documents/workspace/pos-ag-test/target/classes:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/2.1.5.RELEASE/spring-boot-starter-webflux-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.5.RELEASE/spring-boot-starter-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot/2.1.5.RELEASE/spring-boot-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-expression/5.1.7.RELEASE/spring-expression-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.5.RELEASE/spring-boot-starter-logging-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar:/Users/chaipoint/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/Users/chaipoint/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.5.RELEASE/spring-boot-starter-json-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.8/jackson-datatype-jdk8-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.8/jackson-module-parameter-names-2.9.8.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.5.RELEASE/spring-boot-starter-reactor-netty-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-http/4.1.36.Final/netty-codec-http-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-common/4.1.36.Final/netty-common-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-buffer/4.1.36.Final/netty-buffer-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport/4.1.36.Final/netty-transport-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-resolver/4.1.36.Final/netty-resolver-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec/4.1.36.Final/netty-codec-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-http2/4.1.36.Final/netty-codec-http2-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-handler/4.1.36.Final/netty-handler-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-handler-proxy/4.1.36.Final/netty-handler-proxy-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-socks/4.1.36.Final/netty-codec-socks-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport-native-epoll/4.1.36.Final/netty-transport-native-epoll-4.1.36.Final-linux-x86_64.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.36.Final/netty-transport-native-unix-common-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/org/glassfish/javax.el/3.0.0/javax.el-3.0.0.jar:/Users/chaipoint/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.16.Final/hibernate-validator-6.0.16.Final.jar:/Users/chaipoint/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/chaipoint/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/chaipoint/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-webflux/5.1.7.RELEASE/spring-webflux-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/io/projectreactor/reactor-core/3.2.9.RELEASE/reactor-core-3.2.9.RELEASE.jar:/Users/chaipoint/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/chaipoint/.m2/repository/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar:/Users/chaipoint/.m2/repository/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.5.RELEASE/spring-boot-starter-test-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-test/2.1.5.RELEASE/spring-boot-test-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.5.RELEASE/spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/chaipoint/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/chaipoint/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/chaipoint/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/chaipoint/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/Users/chaipoint/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/chaipoint/.m2/repository/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.jar:/Users/chaipoint/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.12/byte-buddy-agent-1.9.12.jar:/Users/chaipoint/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/chaipoint/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/chaipoint/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/chaipoint/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/chaipoint/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-core/5.1.7.RELEASE/spring-core-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-jcl/5.1.7.RELEASE/spring-jcl-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/chaipoint/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/chaipoint/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/chaipoint/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/Users/chaipoint/.m2/repository/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar:/Users/chaipoint/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar:/Users/chaipoint/.m2/repository/org/codehaus/groovy/groovy-json/2.5.7/groovy-json-2.5.7.jar:/Users/chaipoint/.m2/repository/org/codehaus/groovy/groovy/2.5.7/groovy-2.5.7.jar:/Users/chaipoint/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar:/Users/chaipoint/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/chaipoint/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/chaipoint/.m2/repository/org/testng/testng/6.8/testng-6.8.jar:/Users/chaipoint/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/chaipoint/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/chaipoint/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/chaipoint/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/chaipoint/Documents/workspace/pos-ag-test/target/surefire/surefirebooter3336851343838977746.jar /Users/chaipoint/Documents/workspace/pos-ag-test/target/surefire 2019-11-25T18-06-27_043-jvmRun1 surefire1608861353236666521tmp surefire_02500886383274375739tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/chaipoint/Documents/workspace/pos-ag-test/target/test-classes:/Users/chaipoint/Documents/workspace/pos-ag-test/target/classes:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/2.1.5.RELEASE/spring-boot-starter-webflux-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.5.RELEASE/spring-boot-starter-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot/2.1.5.RELEASE/spring-boot-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-expression/5.1.7.RELEASE/spring-expression-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.5.RELEASE/spring-boot-starter-logging-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar:/Users/chaipoint/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/Users/chaipoint/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.5.RELEASE/spring-boot-starter-json-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.8/jackson-datatype-jdk8-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar:/Users/chaipoint/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.8/jackson-module-parameter-names-2.9.8.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.5.RELEASE/spring-boot-starter-reactor-netty-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-http/4.1.36.Final/netty-codec-http-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-common/4.1.36.Final/netty-common-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-buffer/4.1.36.Final/netty-buffer-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport/4.1.36.Final/netty-transport-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-resolver/4.1.36.Final/netty-resolver-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec/4.1.36.Final/netty-codec-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-http2/4.1.36.Final/netty-codec-http2-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-handler/4.1.36.Final/netty-handler-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-handler-proxy/4.1.36.Final/netty-handler-proxy-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-codec-socks/4.1.36.Final/netty-codec-socks-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport-native-epoll/4.1.36.Final/netty-transport-native-epoll-4.1.36.Final-linux-x86_64.jar:/Users/chaipoint/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.36.Final/netty-transport-native-unix-common-4.1.36.Final.jar:/Users/chaipoint/.m2/repository/org/glassfish/javax.el/3.0.0/javax.el-3.0.0.jar:/Users/chaipoint/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.16.Final/hibernate-validator-6.0.16.Final.jar:/Users/chaipoint/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/chaipoint/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/chaipoint/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-webflux/5.1.7.RELEASE/spring-webflux-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/io/projectreactor/reactor-core/3.2.9.RELEASE/reactor-core-3.2.9.RELEASE.jar:/Users/chaipoint/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/chaipoint/.m2/repository/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar:/Users/chaipoint/.m2/repository/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.5.RELEASE/spring-boot-starter-test-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-test/2.1.5.RELEASE/spring-boot-test-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.5.RELEASE/spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:/Users/chaipoint/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/chaipoint/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/chaipoint/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/chaipoint/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/chaipoint/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/Users/chaipoint/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/chaipoint/.m2/repository/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.jar:/Users/chaipoint/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.12/byte-buddy-agent-1.9.12.jar:/Users/chaipoint/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/chaipoint/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/chaipoint/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/chaipoint/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/chaipoint/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-core/5.1.7.RELEASE/spring-core-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-jcl/5.1.7.RELEASE/spring-jcl-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/Users/chaipoint/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/chaipoint/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/chaipoint/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/Users/chaipoint/.m2/repository/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar:/Users/chaipoint/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar:/Users/chaipoint/.m2/repository/org/codehaus/groovy/groovy-json/2.5.7/groovy-json-2.5.7.jar:/Users/chaipoint/.m2/repository/org/codehaus/groovy/groovy/2.5.7/groovy-2.5.7.jar:/Users/chaipoint/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar:/Users/chaipoint/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/chaipoint/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/chaipoint/.m2/repository/org/testng/testng/6.8/testng-6.8.jar:/Users/chaipoint/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/chaipoint/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/chaipoint/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/Users/chaipoint/.m2/repository/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar:/Users/chaipoint/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar:/Users/chaipoint/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/chaipoint"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/chaipoint/Documents/workspace/pos-ag-test"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/chaipoint/Documents/workspace/pos-ag-test/target/surefire/surefirebooter3336851343838977746.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="user.name" value="chaipoint"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/chaipoint/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/dx/pqyhdpw96n521z3pbll7bl0h0000gn/T/"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="user.dir" value="/Users/chaipoint/Documents/workspace/pos-ag-test"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/chaipoint/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.ext.dirs" value="/Users/chaipoint/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testGetAllProducts" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="6.209"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.305"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.338">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:08.008Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:08.008Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.339">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.041">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.004">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.012">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.009"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.009">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.006">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.006">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.003">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.348"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.005"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.059"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.018"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.004">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:09.009Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.015"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.001"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.002"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.008"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.008"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.114"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.012"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.106"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.151"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.021"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.039"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.004"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.004"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.013"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.01"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.008"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.007"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.034"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.199"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.042"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.06"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.002"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.029"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.028"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.024"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.007"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.025"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.07"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.05"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.085"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.017"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.042"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.052"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.059"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.038"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.011"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.079">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:11.011Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:11.011Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.021"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.034"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.008"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.013">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:11.011Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:11.011Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.005"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.098"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.1"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.104"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.022"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.001"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.003"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.015"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.002"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.088"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.041"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.058"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.058"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.034"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.029"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.005">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.039"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.095"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.002"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.085"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.023"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.025"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.004"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.022">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.039"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.058">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.199"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.011"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.02"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.006"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.013"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.028"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.006">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [66] [INFO ]
+				Running testGetAllProductsLoad
+[2019-11-25T18:07:12.012Z] [in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg] [TestNG] [67] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.13"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.221"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.224"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.26"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.296"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.309"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.327"/>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.333">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+  </testcase>
+  <testcase name="testGetAllProductstLoad" classname="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg" time="0.335">
+    <failure message="Response time of GetAllProducts call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetAllProducts call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg.testGetAllProductstLoad(TestGetAllProductsApiTestNg.java:71)
+</failure>
+  </testcase>
+  <testcase name="testGetProductCatalogue" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.16"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.148"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.014"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.065"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.005"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.021"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.03"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.007"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.009">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:23.023Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:23.023Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.146"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:23.023Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:23.023Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.031"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.065"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.019">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.06"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.015"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.008"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.051"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.007"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.021"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.006"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.063"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.292"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.002">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.01"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.018"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.165">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:24.024Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.091"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.067"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.024"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.006"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.002"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.008"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.016"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.02"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.072"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.132"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.051"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.019"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.014"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.06"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.051"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.045"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.034">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.079"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.023">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.049"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.018">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:25.025Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.017"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.006"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.008"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.098"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.044"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.131"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.021"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.022"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.001"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.004"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.041"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.027"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.059"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.014"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.088"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.02">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.026"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.052"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.037"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.04"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.028"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.023"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.037"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.052"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.042"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.123"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.03"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.036"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.014"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.019">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.062"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.005"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.009"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.011"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.053">
+    <failure message="Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Response time of GetProductCatalogue call more than: 500 expected [true] but found [false]
+	at in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogueLoad(TestGetProductCatalogueApiTestNg.java:74)
+</failure>
+    <system-out><![CDATA[[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [69] [INFO ]
+				Running testGetProductCatalogueLoad
+[2019-11-25T18:07:26.026Z] [in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg] [TestNG] [70] [INFO ]
+				responseTimeThreshold: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.128"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.011"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.031"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.055"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.1"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.118"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.176"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.193"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.237"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.245"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.263"/>
+  <testcase name="testGetProductCatalogueLoad" classname="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg" time="0.317"/>
+</testsuite>
