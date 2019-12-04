@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pos-ag-apis-load-test">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+
+	<!-- API Load Test Cases -->
+	<test name="getProductCatalogueLoadTest">
+		<parameter name="apiUri"
+			value="/api/catalogue-master/getProductCatalogue"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+				<methods>
+					<include name="testGetProductCatalogueLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="getAllStaffForTerminalLoadTest">
+		<parameter name="apiUri"
+			value="/api/staff/getAllStaffForTerminal"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+				<methods>
+					<include name="testGetAllStaffForTerminalLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="getTerminalConfigLoadTest">
+		<parameter name="apiUri"
+			value="/api/outlet-master/getTerminalConfig"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+				<methods>
+					<include name="testGetTerminalConfigLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="postEventsLoadTest">
+		<parameter name="apiUri" value="/api/event/postEvents"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/postEvents/sample.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+				<methods>
+					<include name="testpostEventsLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="heartbeatLoadTest">
+		<parameter name="apiUri" value="/api/event/heartbeat"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/validParameters.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+				<methods>
+					<include name="testHeartBeatLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="orderHistoryLoadTest">
+		<parameter name="apiUri" value="/api/order/history"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/validParameters.json"></parameter>
+		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+				<methods>
+					<include name="testOrderHistoryLoad" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

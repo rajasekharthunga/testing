@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="staff-master-getAllStaffForTerminal">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri"
+		value="/api/staff/getAllStaffForTerminal"></parameter>
+
+	<!-- GetProductsCatalogue API Test Cases -->
+	<test name="validParameters">
+		<parameter name="numberOfStaff" value="10000"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+				<methods>
+					<include name="testGetAllStaffForTerminal" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptypayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="TerminalIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="nullTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/nullTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/emptyTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="invalidServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"></parameter>
+		<parameter name="apiKey" value="123"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
+
+

@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "eventData": "string",
+      "eventId": 0,
+      "eventTimestamp": 0,
+      "eventType": "string"
+    }
+  ],
+  "storeId": 0,
+  "terminalId": 0
+}

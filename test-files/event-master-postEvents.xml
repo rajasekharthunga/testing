@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Event-master-postEvents">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri"
+		value="/api/event/postEvents"></parameter>
+
+	<!-- PostEvent API Test Cases -->
+	<test name="validParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/postEvents/sample.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+				<methods>
+					<include name="testPostEvent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

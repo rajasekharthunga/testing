@@ -3,33 +3,152 @@
 <suite name="catalogue-master-getAllProducts">
 
 	<parameter name="apiKey" value="1234567"></parameter>
-	<parameter name="apiUri" value="/api/catalogue-master/getAllProducts"></parameter>
+	<parameter name="apiUri"
+		value="/api/catalogue-master/getAllProducts"></parameter>
 
-	<!-- GetOrders API Test Cases -->
-	<test name="validModuleId">
-		<parameter name="moduleId" value="1"></parameter>
+	<!-- GetAllProducts API Test Cases -->
+	<test name="validParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/validParameters.json"></parameter>
 		<classes>
 			<class
-				name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
 				<methods>
 					<include name="testGetAllProducts" />
 				</methods>
 			</class>
 		</classes>
 	</test>
+	<test name="emptypayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/emptypayload.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="moduleIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/moduleIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="negativeModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/negativeModuleId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="decimalModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/decimalModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/nullModuleId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/emptyModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="stringModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/stringModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="moduleIdBoundaryCheck">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/emptyModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/emptyModuleId.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 	<test name="getAllProductsLoadTest">
-		<parameter name="moduleId" value="1"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getAllProducts/validParameters.json"></parameter>
 		<parameter name="maxResponseTimeThreshold" value="500"></parameter>
 		<classes>
 			<class
-				name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+				name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
 				<methods>
 					<include name="testGetAllProductstLoad" />
 				</methods>
 			</class>
 		</classes>
 	</test>
-
 </suite>
 
 

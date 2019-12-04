@@ -3,33 +3,105 @@
 <suite name="catalogue-master-getProductCatalogue">
 
 	<parameter name="apiKey" value="1234567"></parameter>
-	<parameter name="apiUri" value="/api/catalogue-master/getProductCatalogue"></parameter>
+	<parameter name="apiUri"
+		value="/api/catalogue-master/getProductCatalogue"></parameter>
 
-	<!-- GetOrders API Test Cases -->
-	<test name="validModuleId">
-		<parameter name="moduleId" value="1"></parameter>
+	<!-- GetProductsCatalogue API Test Cases -->
+	<test name="validParameters">
+		<parameter name="sellerIdList" value="1, 2, 3, 4"></parameter>
+		<parameter name="productListSize" value="220, 220, 220, 220"></parameter>
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
 		<classes>
 			<class
-				name="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+				name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
 				<methods>
 					<include name="testGetProductCatalogue" />
 				</methods>
 			</class>
 		</classes>
 	</test>
-	<test name="getProductCatalogueLoadTest">
-		<parameter name="moduleId" value="1"></parameter>
-		<parameter name="maxResponseTimeThreshold" value="500"></parameter>
+	<test name="emptypayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
 		<classes>
 			<class
-				name="in.shark.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
 				<methods>
-					<include name="testGetProductCatalogueLoad" />
+					<include name="testErrorCode" />
 				</methods>
 			</class>
 		</classes>
 	</test>
-
+	<test name="TerminalIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/nullTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/emptyTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="invalidServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
+		<parameter name="apiKey" value="123"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>
 
 

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Event-master-heartbeat">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri" value="/api/event/heartbeat"></parameter>
+
+	<!-- PostEvent API Test Cases -->
+	<test name="validParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/validParameters.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+				<methods>
+					<include name="testHeartbeat" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="invalidParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/invalidParameters.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/nullParameters.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptypayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/emptypayload.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="terminalIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/terminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/nullTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/emptyTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullTimestamp">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/nullTimestamp.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="invalidDatatypeTimestamp">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/invalidDatatypeTimestamp.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="timestampBoundaryCheck">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/timestampBoundaryCheck.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/validParameters.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="invalidServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/event-master/heartbeat/validParameters.json"></parameter>
+		<parameter name="apiKey" value="123"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

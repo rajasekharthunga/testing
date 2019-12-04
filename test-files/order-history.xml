@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="order-history">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri" value="/api/order/history"></parameter>
+
+	<!-- PostEvent API Test Cases -->
+	<test name="validParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/validParameters.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+				<methods>
+					<include name="testHistory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyPayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/emptyPayload.json"></parameter>
+		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="moduleIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/moduleIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="negativeModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/negativeModuleId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="decimalModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/decimalModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="nullModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/nullModuleId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_MODULE_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="emptyModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/emptyModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="stringModuleId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/stringModuleId.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="moduleIdBoundaryCheck">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/moduleIdBoundaryCheck.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testBadRequest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="emptyServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/validParameters.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="invalidServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/order/history/validParameters.json"></parameter>
+		<parameter name="apiKey" value="123"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

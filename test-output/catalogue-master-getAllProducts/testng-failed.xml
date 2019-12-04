@@ -1,27 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [catalogue-master-getAllProducts]">
+  <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getAllProducts/validParameters.json"/>
   <parameter name="maxResponseTimeThreshold" value="500"/>
   <parameter name="apiUri" value="/api/catalogue-master/getAllProducts"/>
   <parameter name="apiKey" value="1234567"/>
-  <parameter name="moduleId" value="1"/>
-  <test name="getAllProductsLoadTest(failed)">
-    <parameter name="maxResponseTimeThreshold" value="500"/>
-    <parameter name="moduleId" value="1"/>
+  <parameter name="expectedErrorCode" value="INVALID_TERMINAL_MODULE_ID"/>
+  <test name="moduleIdNotInDb(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getAllProducts/moduleIdNotInDb.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_MODULE_ID"/>
     <classes>
-      <class name="in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg">
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
         <methods>
-          <include name="testGetAllProductstLoad"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0"/>
           <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
           <include name="springTestContextBeforeTestMethod"/>
           <include name="springTestContextAfterTestMethod"/>
         </methods>
-      </class> <!-- in.shark.online.web.test.catalogue.master.TestGetAllProductsApiTestNg -->
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- moduleIdNotInDb(failed) -->
+  <test name="getAllProductsLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getAllProducts/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="500"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testGetAllProductstLoad"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetAllProducstApiTestNg -->
       <class name="java.lang.Boolean">
         <methods>
           <include name="springTestContextBeforeTestMethod"/>

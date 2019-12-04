@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [pos-ag-apis-load-test]">
+  <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+  <parameter name="maxResponseTimeThreshold" value="5000"/>
+  <parameter name="apiUri" value="/api/order/history"/>
+  <parameter name="apiKey" value="1234567"/>
+  <test name="getProductCatalogueLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/catalogue-master/getProductCatalogue"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testGetProductCatalogueLoad"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- getProductCatalogueLoadTest(failed) -->
+  <test name="getAllStaffForTerminalLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/staff/getAllStaffForTerminal"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testGetAllStaffForTerminalLoad"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- getAllStaffForTerminalLoadTest(failed) -->
+  <test name="getTerminalConfigLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/outlet-master/getTerminalConfig"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="testGetTerminalConfigLoad"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- getTerminalConfigLoadTest(failed) -->
+  <test name="postEventsLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/event-master/postEvents/sample.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/event/postEvents"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testpostEventsLoad"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- postEventsLoadTest(failed) -->
+  <test name="heartbeatLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/event-master/heartbeat/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/event/heartbeat"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testHeartBeatLoad"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- heartbeatLoadTest(failed) -->
+  <test name="orderHistoryLoadTest(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+    <parameter name="maxResponseTimeThreshold" value="5000"/>
+    <parameter name="apiUri" value="/api/order/history"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestHeartbeatTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestHeartbeatTestNg -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testOrderHistoryLoad"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.event.master.TestPostEventstestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.event.master.TestPostEventstestNg -->
+      <class name="java.lang.Boolean">
+        <methods>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- java.lang.Boolean -->
+    </classes>
+  </test> <!-- orderHistoryLoadTest(failed) -->
+</suite> <!-- Failed suite [pos-ag-apis-load-test] -->

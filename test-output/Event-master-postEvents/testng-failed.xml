@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Event-master-postEvents]">
+  <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+  <parameter name="apiUri" value="/api/order/history"/>
+  <parameter name="apiKey" value="123"/>
+  <parameter name="expectedErrorCode" value="INVALID_TERMINAL_MODULE_ID"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testHistory" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- validParameters(failed) -->
+  <test name="emptyPayload(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/emptyPayload.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_REQUEST"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0 0 0"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- emptyPayload(failed) -->
+  <test name="moduleIdNotInDb(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/moduleIdNotInDb.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_MODULE_ID"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0 0"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- moduleIdNotInDb(failed) -->
+  <test name="negativeModuleId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/negativeModuleId.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_MODULE_ID"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- negativeModuleId(failed) -->
+  <test name="decimalModuleId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/decimalModuleId.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testBadRequest" invocation-numbers="0 0 0"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- decimalModuleId(failed) -->
+  <test name="nullModuleId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/nullModuleId.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_MODULE_ID"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- nullModuleId(failed) -->
+  <test name="emptyModuleId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/emptyModuleId.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testBadRequest" invocation-numbers="0 0"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- emptyModuleId(failed) -->
+  <test name="stringModuleId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/stringModuleId.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testBadRequest" invocation-numbers="0"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- stringModuleId(failed) -->
+  <test name="moduleIdBoundaryCheck(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/moduleIdBoundaryCheck.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testBadRequest" invocation-numbers="0 0"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- moduleIdBoundaryCheck(failed) -->
+  <test name="emptyServiceAuthKey(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+    <parameter name="apiKey" value=""/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="testServiceAuthKey" invocation-numbers="0"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- emptyServiceAuthKey(failed) -->
+  <test name="invalidServiceAuthKey(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/history/validParameters.json"/>
+    <parameter name="apiKey" value="123"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="testServiceAuthKey" invocation-numbers="0 0"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.order.TestHistoryTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestHistoryTestNg -->
+    </classes>
+  </test> <!-- invalidServiceAuthKey(failed) -->
+</suite> <!-- Failed suite [Event-master-postEvents] -->
