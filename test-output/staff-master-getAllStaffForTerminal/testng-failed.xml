@@ -6,19 +6,10 @@
   <parameter name="apiUri" value="/api/staff/getAllStaffForTerminal"/>
   <parameter name="apiKey" value="123"/>
   <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
-  <test name="emptypayload(failed)">
-    <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/TerminalIdNotInDb.json"/>
-    <parameter name="expectedErrorCode" value="INVALID_REQUEST"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"/>
+    <parameter name="numberOfStaff" value="10000"/>
     <classes>
-      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
-        <methods>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
       <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
         <methods>
           <include name="springTestContextBeforeTestClass"/>
@@ -51,24 +42,24 @@
           <include name="springTestContextAfterTestMethod"/>
           <include name="springTestContextAfterTestMethod"/>
           <include name="springTestContextAfterTestMethod"/>
-          <include name="testErrorCode" invocation-numbers="0"/>
         </methods>
       </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="testGetAllStaffForTerminal" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
     </classes>
-  </test> <!-- emptypayload(failed) -->
+  </test> <!-- validParameters(failed) -->
   <test name="TerminalIdNotInDb(failed)">
     <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/TerminalIdNotInDb.json"/>
     <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
     <classes>
-      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
-        <methods>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
       <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
         <methods>
           <include name="springTestContextBeforeTestClass"/>
@@ -104,106 +95,15 @@
           <include name="testErrorCode" invocation-numbers="0"/>
         </methods>
       </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
     </classes>
   </test> <!-- TerminalIdNotInDb(failed) -->
-  <test name="nullTerminalId(failed)">
-    <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/nullTerminalId.json"/>
-    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
-    <classes>
-      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
-        <methods>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
-      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
-        <methods>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="testErrorCode" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
-    </classes>
-  </test> <!-- nullTerminalId(failed) -->
-  <test name="emptyServiceAuthKey(failed)">
-    <parameter name="requestJsonfile" value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"/>
-    <parameter name="apiKey" value=""/>
-    <classes>
-      <class name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
-        <methods>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg -->
-      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
-        <methods>
-          <include name="testServiceAuthKey" invocation-numbers="0"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
-    </classes>
-  </test> <!-- emptyServiceAuthKey(failed) -->
 </suite> <!-- Failed suite [staff-master-getAllStaffForTerminal] -->

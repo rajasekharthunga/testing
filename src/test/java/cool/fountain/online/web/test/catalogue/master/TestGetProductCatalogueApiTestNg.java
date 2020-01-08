@@ -98,6 +98,7 @@ public class TestGetProductCatalogueApiTestNg extends AbstractTestNGSpringContex
 			}
 
 		} else {
+			logger.info("getProductCatalogue is returning statusCode "+statusCode+" insted of 200 ");
 			assertTrue(false);
 		}
 
@@ -127,7 +128,7 @@ public class TestGetProductCatalogueApiTestNg extends AbstractTestNGSpringContex
 		String json = TestAutomationUtil.getContent(requestJsonfile);
 		RequestBodyUriSpec requestBody = testClient.post();
 		addHeaders(requestBody, apiKey);
-		BodyContentSpec body = requestBody.contentType(MediaType.APPLICATION_JSON).syncBody(json).exchange()
+		requestBody.contentType(MediaType.APPLICATION_JSON).syncBody(json).exchange()
 				.expectStatus().isOk().expectBody();
 	}
 }

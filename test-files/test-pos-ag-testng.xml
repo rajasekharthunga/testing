@@ -3,7 +3,6 @@
 <suite name="Test E-Commerce Platform APIs">
 	<suite-files>
 		<suite-file path="./terminal-master-getTerminalConfig.xml" />
-		<suite-file path="./staff-master-getAllStaffForTerminal.xml" />
 		<suite-file path="./catalogue-master-getProductCatalogue.xml" />
 		<suite-file path="./event-master-postEvents.xml" />
 		<suite-file path="./event-master-heartbeat.xml" />

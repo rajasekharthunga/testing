@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [payment-controller-getSellerPaymentMethod]">
+  <parameter name="requestJsonfile" value="test-files/json-data/payment-controller/getSellerPaymentMethods/validParameters.json"/>
+  <parameter name="apiUri" value="/api/payment/getSellerPaymentMethods"/>
+  <parameter name="apiKey" value="1234567"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/payment-controller/getSellerPaymentMethods/validParameters.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.payment.controller.TestGetSellerPaymentMethodsTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testGetSellerPaymentMethods" invocation-numbers="0"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.payment.controller.TestGetSellerPaymentMethodsTestNg -->
+    </classes>
+  </test> <!-- validParameters(failed) -->
+</suite> <!-- Failed suite [payment-controller-getSellerPaymentMethod] -->

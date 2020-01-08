@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [catalogue-master-getProductCatalogue]">
+  <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"/>
+  <parameter name="apiUri" value="/api/catalogue-master/getProductCatalogue"/>
+  <parameter name="apiKey" value="123"/>
+  <parameter name="productListSize" value="36"/>
+  <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
+  <parameter name="sellerIdList" value="103"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"/>
+    <parameter name="productListSize" value="36"/>
+    <parameter name="sellerIdList" value="103"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testGetProductCatalogue" invocation-numbers="0"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+    </classes>
+  </test> <!-- validParameters(failed) -->
+</suite> <!-- Failed suite [catalogue-master-getProductCatalogue] -->

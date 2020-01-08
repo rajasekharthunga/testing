@@ -106,7 +106,7 @@
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/event-master/heartbeat/nullTimestamp.json"></parameter>
 		<parameter name="expectedErrorCode"
-			value="INVALID_TERMINAL_ID"></parameter>
+			value="INVALID_TIMESTAMP"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">

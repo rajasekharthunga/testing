@@ -4,12 +4,63 @@
   <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"/>
   <parameter name="apiUri" value="/api/outlet-master/getTerminalConfig"/>
   <parameter name="apiKey" value="123"/>
-  <parameter name="moduleList" value="1"/>
+  <parameter name="moduleList" value="1, 3, 4"/>
   <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
-  <parameter name="outletCode" value="s12"/>
+  <parameter name="outletCode" value="6694"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"/>
+    <parameter name="moduleList" value="1, 3, 4"/>
+    <parameter name="outletCode" value="6694"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testGetTerminalConfig" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+    </classes>
+  </test> <!-- validParameters(failed) -->
   <test name="emptyPayload(failed)">
     <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/emptyPayload.json"/>
-    <parameter name="expectedErrorCode" value="INVALID_REQUEST"/>
+    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
     <classes>
       <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
         <methods>
@@ -57,6 +108,106 @@
       </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
     </classes>
   </test> <!-- emptyPayload(failed) -->
+  <test name="TerminalIdNotInDb(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/TerminalIdNotInDb.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+    </classes>
+  </test> <!-- TerminalIdNotInDb(failed) -->
+  <test name="nullTerminalId(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/nullTerminalId.json"/>
+    <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testErrorCode" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+    </classes>
+  </test> <!-- nullTerminalId(failed) -->
   <test name="emptyTerminalId(failed)">
     <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/emptyTerminalId.json"/>
     <parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"/>
@@ -107,6 +258,56 @@
       </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
     </classes>
   </test> <!-- emptyTerminalId(failed) -->
+  <test name="emptyServiceAuthKey(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"/>
+    <parameter name="apiKey" value=""/>
+    <classes>
+      <class name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+        <methods>
+          <include name="testServiceAuthKey" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.errors.TestErrorsForPostReq -->
+      <class name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg -->
+    </classes>
+  </test> <!-- emptyServiceAuthKey(failed) -->
   <test name="invalidServiceAuthKey(failed)">
     <parameter name="requestJsonfile" value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"/>
     <parameter name="apiKey" value="123"/>

@@ -1,0 +1,21 @@
+{
+  "cartId": 1,
+  "cartItemList": [
+    {
+      "chargesList": [
+        {
+          "description": "string",
+          "name": "string",
+          "rate": 0,
+          "value": 0
+        }
+      ],
+      "itemId": 0,
+      "itemName": "string",
+      "itemQuantity": 0,
+      "price": 0
+    }
+  ],
+  "customerName": "string",
+  "totalCartValue": 0
+}

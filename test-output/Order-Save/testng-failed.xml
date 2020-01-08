@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Order-Save]">
+  <parameter name="requestJsonfile" value="test-files/json-data/order/save/sample.json"/>
+  <parameter name="apiUri" value="/api/order/save"/>
+  <parameter name="apiKey" value="1234567"/>
+  <test name="validParameters(failed)">
+    <parameter name="requestJsonfile" value="test-files/json-data/order/save/sample.json"/>
+    <classes>
+      <class name="cool.fountain.online.web.test.order.TestSaveTestNg">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="testSaveOrderLoad"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- cool.fountain.online.web.test.order.TestSaveTestNg -->
+    </classes>
+  </test> <!-- validParameters(failed) -->
+</suite> <!-- Failed suite [Order-Save] -->

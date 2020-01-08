@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="payment-controller-getSellerPaymentMethod">
+
+	<parameter name="apiKey" value="1234567"></parameter>
+	<parameter name="apiUri"
+		value="/api/payment/getSellerPaymentMethods"></parameter>
+
+	<!-- payment-controller API Test Cases -->
+	<test name="validParameters">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/validParameters.json"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.payment.controller.TestGetSellerPaymentMethodsTestNg">
+				<methods>
+					<include name="testGetSellerPaymentMethods" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptypayload">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="TerminalIdNotInDb">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/TerminalIdNotInDb.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="nullTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/nullTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyTerminalId">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/emptyTerminalId.json"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testErrorCode" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="emptyServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/validParameters.json"></parameter>
+		<parameter name="apiKey" value=""></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="invalidServiceAuthKey">
+		<parameter name="requestJsonfile"
+			value="test-files/json-data/payment-controller/getSellerPaymentMethods/validParameters.json"></parameter>
+		<parameter name="apiKey" value="123"></parameter>
+		<classes>
+			<class
+				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
+				<methods>
+					<include name="testServiceAuthKey" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+

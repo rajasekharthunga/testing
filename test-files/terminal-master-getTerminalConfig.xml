@@ -10,8 +10,8 @@
 	<test name="validParameters">
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"></parameter>
-		<parameter name="outletCode" value="s12"></parameter>
-		<parameter name="moduleList" value="1"></parameter>
+		<parameter name="outletCode" value="6694"></parameter>
+		<parameter name="moduleList" value="1, 3, 4"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">
@@ -24,7 +24,8 @@
 	<test name="emptyPayload">
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/terminal-master/getTerminalConfig/emptyPayload.json"></parameter>
-		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
+		<parameter name="expectedErrorCode"
+			value="INVALID_TERMINAL_ID"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">

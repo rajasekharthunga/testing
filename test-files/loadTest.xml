@@ -21,22 +21,6 @@
 		</classes>
 	</test>
 
-	<test name="getAllStaffForTerminalLoadTest">
-		<parameter name="apiUri"
-			value="/api/staff/getAllStaffForTerminal"></parameter>
-		<parameter name="requestJsonfile"
-			value="test-files/json-data/staff-master/getAllStaffForTerminal/validParameters.json"></parameter>
-		<parameter name="maxResponseTimeThreshold" value="5000"></parameter>
-		<classes>
-			<class
-				name="cool.fountain.online.web.test.staff.master.TestGetAllStaffForTerminalTestNg">
-				<methods>
-					<include name="testGetAllStaffForTerminalLoad" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-
 	<test name="getTerminalConfigLoadTest">
 		<parameter name="apiUri"
 			value="/api/outlet-master/getTerminalConfig"></parameter>

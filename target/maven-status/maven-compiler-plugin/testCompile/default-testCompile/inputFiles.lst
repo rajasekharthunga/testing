@@ -1,0 +1,13 @@
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/catalogue/master/TestGetProductCatalogueApiTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/errors/TestErrorsForPostReq.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/staff/master/TestGetAllStaffForTerminalTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/event/master/TestHeartbeatTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/terminal/master/TestGetTerminalConfigTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/payment/controller/TestGetSellerPaymentMethodsTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/order/TestHistoryTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/catalogue/master/TestGetAllProducstApiTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/order/TestSaveTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/cart/TestCreateTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/customer/TestCreateTestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/online/web/test/event/master/TestPostEventstestNg.java
+/Users/chaipoint/Documents/workspace/pos-ag-test/src/test/java/cool/fountain/cloud/test/util/TestAutomationUtil.java

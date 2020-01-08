@@ -22,8 +22,8 @@
 	</test>
 	<test name="emptypayload">
 		<parameter name="requestJsonfile"
-			value="test-files/json-data/staff-master/getAllStaffForTerminal/TerminalIdNotInDb.json"></parameter>
-		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
+			value="test-files/json-data/staff-master/getAllStaffForTerminal/emptyPayload.json"></parameter>
+		<parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">

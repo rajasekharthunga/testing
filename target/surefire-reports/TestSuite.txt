@@ -1,0 +1,186 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 538, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 306.106 s <<< FAILURE! - in TestSuite
+testGetProductCatalogue(cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg)  Time elapsed: 0.985 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg.testGetProductCatalogue(TestGetProductCatalogueApiTestNg.java:87)
+
+testHeartbeat(cool.fountain.online.web.test.event.master.TestHeartbeatTestNg)  Time elapsed: 0.105 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response body expected:<true> but was:<{"errorCode":"INVALID_TERMINAL_ID","message":"INVALID_TERMINAL_ID"}>
+
+> POST https://testing.chaipoint.com/qa3/outlet-pos-api/api/event/heartbeat
+> Content-Length: [52]
+> WebTestClient-Request-Id: [1]
+> service.auth.key: [1234567]
+> Content-Type: [application/json]
+
+{
+  "terminalId": "T00001",
+  "timestamp": 1234567
+}
+
+< 200 OK OK
+< Date: [Wed, 08 Jan 2020 10:35:23 GMT]
+< Content-Type: [application/json;charset=UTF-8]
+< Transfer-Encoding: [chunked]
+< Connection: [keep-alive]
+< Access-Control-Allow-Headers: [Content-Type, Cookie, service.auth.key]
+< Access-Control-Allow-Credentials: [true]
+< Access-Control-Max-Age: [86400]
+< X-Content-Type-Options: [nosniff]
+< X-XSS-Protection: [1; mode=block]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Frame-Options: [DENY]
+
+{"errorCode":"INVALID_TERMINAL_ID","message":"INVALID_TERMINAL_ID"}
+
+	at cool.fountain.online.web.test.event.master.TestHeartbeatTestNg.testHeartbeat(TestHeartbeatTestNg.java:65)
+Caused by: java.lang.AssertionError: Response body expected:<true> but was:<{"errorCode":"INVALID_TERMINAL_ID","message":"INVALID_TERMINAL_ID"}>
+	at cool.fountain.online.web.test.event.master.TestHeartbeatTestNg.testHeartbeat(TestHeartbeatTestNg.java:65)
+
+testErrorCode(cool.fountain.online.web.test.errors.TestErrorsForPostReq)  Time elapsed: 0.078 s  <<< FAILURE!
+java.lang.AssertionError: 
+Status expected:<400 BAD_REQUEST> but was:<200 OK>
+
+> POST https://testing.chaipoint.com/qa3/outlet-pos-api/api/event/heartbeat
+> WebTestClient-Request-Id: [1]
+> service.auth.key: [1234567]
+> Content-Type: [application/json]
+> Content-Length: [46]
+
+{
+  "terminalId": "abc",
+  "timestamp": 1234
+}
+
+< 200 OK OK
+< Date: [Wed, 08 Jan 2020 10:35:43 GMT]
+< Content-Type: [application/json;charset=UTF-8]
+< Transfer-Encoding: [chunked]
+< Connection: [keep-alive]
+< Access-Control-Allow-Headers: [Content-Type, Cookie, service.auth.key]
+< Access-Control-Allow-Credentials: [true]
+< Access-Control-Max-Age: [86400]
+< X-Content-Type-Options: [nosniff]
+< X-XSS-Protection: [1; mode=block]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Frame-Options: [DENY]
+
+{"errorCode":"INVALID_TERMINAL_ID","message":"Invalid TerminalId, Please provide a valid terminal ID"}
+
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
+Caused by: java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<200 OK>
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
+
+testErrorCode(cool.fountain.online.web.test.errors.TestErrorsForPostReq)  Time elapsed: 0.088 s  <<< FAILURE!
+java.lang.AssertionError: 
+Status expected:<400 BAD_REQUEST> but was:<200 OK>
+
+> POST https://testing.chaipoint.com/qa3/outlet-pos-api/api/event/heartbeat
+> Content-Length: [54]
+> WebTestClient-Request-Id: [1]
+> service.auth.key: [1234567]
+> Content-Type: [application/json]
+
+{
+  "terminalId": "terminal_1",
+  "timestamp": 12.34
+}
+
+< 200 OK OK
+< Date: [Wed, 08 Jan 2020 10:36:03 GMT]
+< Content-Type: [application/json;charset=UTF-8]
+< Transfer-Encoding: [chunked]
+< Connection: [keep-alive]
+< Access-Control-Allow-Headers: [Content-Type, Cookie, service.auth.key]
+< Access-Control-Allow-Credentials: [true]
+< Access-Control-Max-Age: [86400]
+< X-Content-Type-Options: [nosniff]
+< X-XSS-Protection: [1; mode=block]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Frame-Options: [DENY]
+
+{"errorCode":"INVALID_TERMINAL_ID","message":"Invalid TerminalId, Please provide a valid terminal ID"}
+
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
+Caused by: java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<200 OK>
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
+
+testErrorCode(cool.fountain.online.web.test.errors.TestErrorsForPostReq)  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: JSON path "$.errorCode" expected:<INVALID_REQUEST> but was:<INVALID_TERMINAL_MODULE_ID>
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:62)
+
+testBadRequest(cool.fountain.online.web.test.errors.TestErrorsForPostReq)  Time elapsed: 0.638 s  <<< FAILURE!
+java.lang.AssertionError: 
+Status expected:<400 BAD_REQUEST> but was:<200 OK>
+
+> POST https://testing.chaipoint.com/qa3/outlet-pos-api/api/order/history
+> WebTestClient-Request-Id: [1]
+> service.auth.key: [1234567]
+> Content-Type: [application/json]
+> Content-Length: [23]
+
+{
+  "moduleId":1.5990
+}
+
+< 200 OK OK
+< Date: [Wed, 08 Jan 2020 10:36:45 GMT]
+< Content-Type: [application/json;charset=UTF-8]
+< Transfer-Encoding: [chunked]
+< Connection: [keep-alive]
+< Access-Control-Allow-Headers: [Content-Type, Cookie, service.auth.key]
+< Access-Control-Allow-Credentials: [true]
+< Access-Control-Max-Age: [86400]
+< X-Content-Type-Options: [nosniff]
+< X-XSS-Protection: [1; mode=block]
+< Cache-Control: [no-cache, no-store, max-age=0, must-revalidate]
+< Pragma: [no-cache]
+< Expires: [0]
+< X-Frame-Options: [DENY]
+
+{"errorCode":"INTERNAL_ERROR_OCCURED","message":" Could not fetch orders"}
+
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testBadRequest(TestErrorsForPostReq.java:86)
+Caused by: java.lang.AssertionError: Status expected:<400 BAD_REQUEST> but was:<200 OK>
+	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testBadRequest(TestErrorsForPostReq.java:86)
+
+testOrderHistoryLoad(cool.fountain.online.web.test.order.TestHistoryTestNg)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: 
+Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
+
+> POST https://testing.chaipoint.com/qa3/outlet-pos-api/api/order/history
+> WebTestClient-Request-Id: [1]
+> service.auth.key: [1234567]
+> Content-Type: [application/json]
+> Content-Length: [19]
+
+{
+  "moduleId": 1
+}
+
+< 500 INTERNAL_SERVER_ERROR Internal Server Error
+< Date: [Wed, 08 Jan 2020 10:37:58 GMT]
+< Content-Type: [application/json;charset=UTF-8]
+< Transfer-Encoding: [chunked]
+< Connection: [keep-alive]
+< Access-Control-Allow-Headers: [Content-Type, Cookie, service.auth.key]
+< Access-Control-Allow-Credentials: [true]
+< Access-Control-Max-Age: [86400]
+
+{"timestamp":1578479878389,"status":500,"error":"Internal Server Error","message":"Cannot connect to Hessian remote service at [https://testing.chaipoint.com/qa3/terminal-api/terminalModuleStateService]; nested exception is com.caucho.hessian.client.HessianConnectionException: 502: java.io.IOException: Server returned HTTP response code: 502 for URL: https://testing.chaipoint.com/qa3/terminal-api/terminalModuleStateService","path":"/qa3/outlet-pos-api/api/order/history"}
+
+	at cool.fountain.online.web.test.order.TestHistoryTestNg.history(TestHistoryTestNg.java:91)
+	at cool.fountain.online.web.test.order.TestHistoryTestNg.testOrderHistoryLoad(TestHistoryTestNg.java:77)
+Caused by: java.lang.AssertionError: Status expected:<200 OK> but was:<500 INTERNAL_SERVER_ERROR>
+	at cool.fountain.online.web.test.order.TestHistoryTestNg.history(TestHistoryTestNg.java:91)
+	at cool.fountain.online.web.test.order.TestHistoryTestNg.testOrderHistoryLoad(TestHistoryTestNg.java:77)
+

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>emptypayload</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 04 18:17:37 IST 2019</td>
+<td>Started on:</td><td>Wed Jan 08 15:23:37 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (214 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (110 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,115 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode()'><b>testErrorCode</b><br>Test class: cool.fountain.online.web.test.errors.TestErrorsForPostReq<br>Parameters: 1234567, /api/catalogue-master/getProductCatalogue, test-files/json-data/catalogue-master/getProductCatalogue/TerminalIdNotInDb.json, INVALID_REQUEST</td>
-<td><div><pre>java.lang.AssertionError: Status expected:&lt;400 BAD_REQUEST&gt; but was:&lt;404 NOT_FOUND&gt;
-
-&gt; POST https://qa3-api.chaipoint.com/outlet-pos-api/api/catalogue-master/getProductCatalogue
-&gt; WebTestClient-Request-Id: [1]
-&gt; Content-Length: [28]
-&gt; service.auth.key: [1234567]
-&gt; Content-Type: [application/json]
-
-{
-  &quot;terminalId&quot;: &quot;999888&quot;
-}
-
-&lt; 404 NOT_FOUND Not Found
-&lt; Date: [Wed, 04 Dec 2019 12:47:37 GMT]
-&lt; Content-Type: [text/html;charset=utf-8]
-&lt; Content-Length: [1102]
-&lt; Connection: [keep-alive]
-&lt; Server: [Apache-Coyote/1.1]
-&lt; Content-Language: [en]
-
-&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.5.0 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 - /outlet-pos-api/api/catalogue-master/getProductCatalogue&lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;/outlet-pos-api/api/catalogue-master/getProductCatalogue&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The requested resource is not available.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.5.0&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-
-	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:200)
-	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:227)
-	at org.springframework.test.web.reactive.server.StatusAssertions.isBadRequest(StatusAssertions.java:131)
-	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
-Caused by: java.lang.AssertionError: Status expected:&lt;400 BAD_REQUEST&gt; but was:&lt;404 NOT_FOUND&gt;
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:55)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:82)
-	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:227)
-	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:197)
-	... 34 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace281487983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace281487983'><pre>java.lang.AssertionError: Status expected:&lt;400 BAD_REQUEST&gt; but was:&lt;404 NOT_FOUND&gt;
-
-&gt; POST https://qa3-api.chaipoint.com/outlet-pos-api/api/catalogue-master/getProductCatalogue
-&gt; WebTestClient-Request-Id: [1]
-&gt; Content-Length: [28]
-&gt; service.auth.key: [1234567]
-&gt; Content-Type: [application/json]
-
-{
-  &quot;terminalId&quot;: &quot;999888&quot;
-}
-
-&lt; 404 NOT_FOUND Not Found
-&lt; Date: [Wed, 04 Dec 2019 12:47:37 GMT]
-&lt; Content-Type: [text/html;charset=utf-8]
-&lt; Content-Length: [1102]
-&lt; Connection: [keep-alive]
-&lt; Server: [Apache-Coyote/1.1]
-&lt; Content-Language: [en]
-
-&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.5.0 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 404 - /outlet-pos-api/api/catalogue-master/getProductCatalogue&lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;/outlet-pos-api/api/catalogue-master/getProductCatalogue&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The requested resource is not available.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.5.0&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;
-
-	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:200)
-	at org.springframework.test.web.reactive.server.StatusAssertions.assertStatusAndReturn(StatusAssertions.java:227)
-	at org.springframework.test.web.reactive.server.StatusAssertions.isBadRequest(StatusAssertions.java:131)
-	at cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode(TestErrorsForPostReq.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:182)
-	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:180)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:194)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: Status expected:&lt;400 BAD_REQUEST&gt; but was:&lt;404 NOT_FOUND&gt;
-	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:55)
-	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:82)
-	at org.springframework.test.web.reactive.server.StatusAssertions.lambda$assertStatusAndReturn$4(StatusAssertions.java:227)
-	at org.springframework.test.web.reactive.server.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:197)
-	... 34 more
-</pre></div></td>
+<td title='cool.fountain.online.web.test.errors.TestErrorsForPostReq.testErrorCode()'><b>testErrorCode</b><br>Test class: cool.fountain.online.web.test.errors.TestErrorsForPostReq<br>Parameters: 1234567, /api/catalogue-master/getProductCatalogue, test-files/json-data/catalogue-master/getProductCatalogue/TerminalIdNotInDb.json, INVALID_TERMINAL_ID</td>
+<td></td>
 <td>0</td>
-<td>cool.fountain.online.web.test.errors.TestErrorsForPostReq@6ab778a</td></tr>
+<td>cool.fountain.online.web.test.errors.TestErrorsForPostReq@7e9131d5</td></tr>
 </table><p>
 </body>
 </html>

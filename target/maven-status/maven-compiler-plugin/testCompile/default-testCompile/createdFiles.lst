@@ -1,0 +1,13 @@
+cool/fountain/online/web/test/customer/TestCreateTestNg.class
+cool/fountain/online/web/test/terminal/master/TestGetTerminalConfigTestNg.class
+cool/fountain/online/web/test/payment/controller/TestGetSellerPaymentMethodsTestNg.class
+cool/fountain/online/web/test/cart/TestCreateTestNg.class
+cool/fountain/online/web/test/event/master/TestPostEventstestNg.class
+cool/fountain/online/web/test/order/TestSaveTestNg.class
+cool/fountain/cloud/test/util/TestAutomationUtil.class
+cool/fountain/online/web/test/staff/master/TestGetAllStaffForTerminalTestNg.class
+cool/fountain/online/web/test/catalogue/master/TestGetProductCatalogueApiTestNg.class
+cool/fountain/online/web/test/errors/TestErrorsForPostReq.class
+cool/fountain/online/web/test/catalogue/master/TestGetAllProducstApiTestNg.class
+cool/fountain/online/web/test/event/master/TestHeartbeatTestNg.class
+cool/fountain/online/web/test/order/TestHistoryTestNg.class

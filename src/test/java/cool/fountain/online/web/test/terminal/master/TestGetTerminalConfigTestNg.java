@@ -96,10 +96,12 @@ public class TestGetTerminalConfigTestNg extends AbstractTestNGSpringContextTest
 				}
 			}
 			else {
+				logger.info("getTerminalConfig is not returning same terminalId in the response");
 				assertTrue(false);
 			}
 		}
 		else {
+			logger.info("getTerminalConfig is returning statusCode "+statusCode+" insted of 200 ");
 			assertTrue(false);
 		}
 
@@ -127,7 +129,7 @@ public class TestGetTerminalConfigTestNg extends AbstractTestNGSpringContextTest
 		String json = TestAutomationUtil.getContent(requestJsonfile);
 		RequestBodyUriSpec requestBody = testClient.post();
 		addHeaders(requestBody, apiKey);
-		BodyContentSpec body = requestBody.contentType(MediaType.APPLICATION_JSON).syncBody(json).exchange()
+		requestBody.contentType(MediaType.APPLICATION_JSON).syncBody(json).exchange()
 				.expectStatus().isOk().expectBody();
 	}
 }

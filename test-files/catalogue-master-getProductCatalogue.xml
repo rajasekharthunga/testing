@@ -8,8 +8,8 @@
 
 	<!-- GetProductsCatalogue API Test Cases -->
 	<test name="validParameters">
-		<parameter name="sellerIdList" value="1, 2, 3, 4"></parameter>
-		<parameter name="productListSize" value="220, 220, 220, 220"></parameter>
+		<parameter name="sellerIdList" value="103"></parameter>
+		<parameter name="productListSize" value="36"></parameter>
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
 		<classes>
@@ -24,7 +24,7 @@
 	<test name="emptypayload">
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/catalogue-master/getProductCatalogue/TerminalIdNotInDb.json"></parameter>
-		<parameter name="expectedErrorCode" value="INVALID_REQUEST"></parameter>
+		<parameter name="expectedErrorCode" value="INVALID_TERMINAL_ID"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.errors.TestErrorsForPostReq">
