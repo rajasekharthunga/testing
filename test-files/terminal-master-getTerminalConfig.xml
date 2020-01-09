@@ -7,11 +7,11 @@
 		value="/api/outlet-master/getTerminalConfig"></parameter>
 
 	<!-- GetTerminalConfig API Test Cases -->
-	<test name="validParameters">
+	<test name="validParameters"> 
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/terminal-master/getTerminalConfig/validParameters.json"></parameter>
-		<parameter name="outletCode" value="6694"></parameter>
-		<parameter name="moduleList" value="1, 3, 4"></parameter>
+		<parameter name="outletCode" value="L1498"></parameter>
+		<parameter name="moduleList" value="31,32"></parameter>
 		<classes>
 			<class
 				name="cool.fountain.online.web.test.terminal.master.TestGetTerminalConfigTestNg">

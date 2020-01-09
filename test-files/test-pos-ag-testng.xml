@@ -4,9 +4,6 @@
 	<suite-files>
 		<suite-file path="./terminal-master-getTerminalConfig.xml" />
 		<suite-file path="./catalogue-master-getProductCatalogue.xml" />
-		<suite-file path="./event-master-postEvents.xml" />
-		<suite-file path="./event-master-heartbeat.xml" />
-		<suite-file path="./order-history.xml" />
 		<suite-file path="./loadTest.xml" />
 	</suite-files>
 </suite>

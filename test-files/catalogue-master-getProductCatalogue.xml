@@ -9,7 +9,7 @@
 	<!-- GetProductsCatalogue API Test Cases -->
 	<test name="validParameters">
 		<parameter name="sellerIdList" value="103"></parameter>
-		<parameter name="productListSize" value="36"></parameter>
+		<parameter name="productListSize" value="57"></parameter>
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/catalogue-master/getProductCatalogue/validParameters.json"></parameter>
 		<classes>
