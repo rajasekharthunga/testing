@@ -87,23 +87,8 @@ public class TestGetSellerPaymentMethodTestNg extends AbstractTestNGSpringContex
 			
 			// Checking for terminalId and sellerId	
 			
-			//Checking
-			List<String> checkSellerIdList = new ArrayList<String>();
-			checkSellerIdList = Arrays.asList(sellerIdList);
-			
-			List<String> responseSellerIdList = new ArrayList<String>();
-			
-			int sellerIdCount = outputJson.get("sellerPaymentOptions.size()");
-			System.out.println(sellerIdCount);
-			
-			for(int i=0; i<sellerIdCount; i++) {
-				responseSellerIdList.add(outputJson.get("sellerPaymentOptions["+i+"].sellerId").toString());
-			}
-			
-			Collections.sort(responseSellerIdList);
-			
-			//if(sellerIdList.equalsIgnoreCase(Integer.toString(outputJson.get("sellerPaymentOptions[0].sellerId"))))
-			if(checkSellerIdList.equals(responseSellerIdList))
+			//if(checkSellerIdList.equals(responseSellerIdList))
+			if(sellerIdList.equalsIgnoreCase(Integer.toString(outputJson.get("sellerPaymentOptions[0].sellerId")))
 			{
 				
 				List<String> responsePaymentMethodsList = new ArrayList<String>();
