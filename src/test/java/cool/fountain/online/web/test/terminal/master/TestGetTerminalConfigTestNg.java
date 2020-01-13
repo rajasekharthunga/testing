@@ -38,6 +38,7 @@ import io.restassured.path.json.JsonPath;
 @SpringBootTest(classes = TestApplication.class)
 @ActiveProfiles("qa")
 @AutoConfigureWebTestClient
+
 public class TestGetTerminalConfigTestNg extends AbstractTestNGSpringContextTests {
 	@Value("${server.url}")
 	private String serverUrl;
@@ -58,15 +59,16 @@ public class TestGetTerminalConfigTestNg extends AbstractTestNGSpringContextTest
 	public void testGetTerminalConfig(String apiKey, String apiUri, String requestJsonfile, String outletCode, String moduleList) {
 
 		logger.info("Running GetTerminalConfig");
-
+		
 		String url = getUrl(apiUri);
+		
 		WebTestClient testClient = WebTestClient.bindToServer().baseUrl(url).build();
 		String json = TestAutomationUtil.getContent(requestJsonfile);
 		RequestBodyUriSpec requestBody = testClient.post();
 		addHeaders(requestBody, apiKey);
 		BodyContentSpec body = requestBody.contentType(MediaType.APPLICATION_JSON).syncBody(json).exchange()
 				.expectBody();
-
+	
 		String statusCode = body.returnResult().getStatus().toString();
 		if (statusCode.equalsIgnoreCase("200 OK")) {
 			String responseString = new String(body.returnResult().getResponseBody());
@@ -74,6 +76,7 @@ public class TestGetTerminalConfigTestNg extends AbstractTestNGSpringContextTest
 			// Converting JsonObject into JsonPath
 			JsonPath inputJson = new JsonPath(json);
 			JsonPath outputJson = new JsonPath(responseString);
+			
 			if(inputJson.get("terminalId").toString().equalsIgnoreCase(outputJson.get("terminalId").toString())
 					&& outletCode.equalsIgnoreCase(outputJson.get("outlet.outletCode"))) {
 				

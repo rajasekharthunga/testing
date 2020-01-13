@@ -4,23 +4,17 @@
   <parameter name="requestJsonfile" value="param-val-not-found"/>
   <parameter name="maxResponseTimeThreshold" value="param-val-not-found"/>
   <parameter name="apiUri" value="param-val-not-found"/>
+  <parameter name="sellerId" value="param-val-not-found"/>
   <parameter name="apiKey" value="param-val-not-found"/>
-  <parameter name="productListSize" value="param-val-not-found"/>
-  <parameter name="sellerIdList" value="param-val-not-found"/>
+  <parameter name="paymentMethodList" value="param-val-not-found"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg">
+      <class name="cool.fountain.cloud.online.web.test.payment.TestGetSellerPaymentMethodTestNg">
         <methods>
-          <include name="getProductCatalogue" invocation-numbers="0"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="testGetProductCatalogue" invocation-numbers="0"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="testGetProductCatalogueLoad"/>
-          <include name="springTestContextAfterTestMethod"/>
+          <include name="testGetPaymentMethodLoad"/>
+          <include name="testGetPaymentMethod" invocation-numbers="0"/>
         </methods>
-      </class> <!-- cool.fountain.online.web.test.catalogue.master.TestGetProductCatalogueApiTestNg -->
+      </class> <!-- cool.fountain.cloud.online.web.test.payment.TestGetSellerPaymentMethodTestNg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

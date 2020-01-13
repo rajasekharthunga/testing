@@ -5,7 +5,7 @@
 	<parameter name="apiKey" value="1234567"></parameter>
 	<parameter name="apiUri"
 		value="/api/outlet-master/getTerminalConfig"></parameter>
-
+		
 	<!-- GetTerminalConfig API Test Cases -->
 	<test name="validParameters"> 
 		<parameter name="requestJsonfile"
@@ -21,6 +21,7 @@
 			</class>
 		</classes>
 	</test>
+	
 	<test name="emptyPayload">
 		<parameter name="requestJsonfile"
 			value="test-files/json-data/terminal-master/getTerminalConfig/emptyPayload.json"></parameter>
